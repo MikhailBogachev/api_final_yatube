@@ -47,10 +47,10 @@ python3 manage.py migrate
 python3 manage.py runserver
 ```
 ### Примеры запросов
-**GET** Получение списка публикаций  
-URL: http://127.0.0.1:8000/api/v1/posts/  
+__**GET**__ Получение списка публикаций  
+**URL**: http://127.0.0.1:8000/api/v1/posts/  
 
-Response (JSON):
+**Response (JSON)**:
 ```
 {
 "count": 123,
@@ -69,16 +69,16 @@ Response (JSON):
 }
 ```
 
-**POST** Добавление комментария к публикации с {post_id}  
-URL: http://127.0.0.1:8000/api/v1/posts/{post_id}/comments/  
-Body:
+__**POST**__ Добавление комментария к публикации с {post_id}  
+**URL**: http://127.0.0.1:8000/api/v1/posts/{post_id}/comments/  
+**Body**:
 ```
 {
   "text": "string"
 }
 ```
 
-Response (JSON):
+**Response (JSON)**:
 ```
 {
   "id": 0,
@@ -89,16 +89,16 @@ Response (JSON):
 }
 ```
 
-**POST** Создание подписки авторизованного пользователя на автора following  
-URL: http://127.0.0.1:8000/api/v1/follow/  
-Body:
+__**POST**__ Создание подписки авторизованного пользователя на автора following  
+**URL**: http://127.0.0.1:8000/api/v1/follow/  
+**Body**:
 ```
 {
   "following": "string"
 }
 ```
 
-Response (JSON):
+**Response (JSON)**:
 ```
 {
 "user": "string",

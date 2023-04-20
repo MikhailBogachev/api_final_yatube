@@ -51,6 +51,7 @@ python3 manage.py runserver
 URL: http://127.0.0.1:8000/api/v1/posts/
 
 Response (JSON):
+```
 {
 "count": 123,
 "next": "http://api.example.org/accounts/?offset=400&limit=100",
@@ -66,15 +67,19 @@ Response (JSON):
   }
 ]
 }
+```
 
 **POST** Добавление комментария к публикации с {post_id}
 URL: http://127.0.0.1:8000/api/v1/posts/{post_id}/comments/
 Body:
+```
 {
   "text": "string"
 }
+```
 
 Response (JSON):
+```
 {
   "id": 0,
   "author": "string",
@@ -82,16 +87,21 @@ Response (JSON):
   "created": "2019-08-24T14:15:22Z",
   "post": 0
 }
+```
 
 **POST** Создание подписки авторизованного пользователя на автора following
 URL: http://127.0.0.1:8000/api/v1/follow/
 Body:
+```
 {
   "following": "string"
 }
+```
 
 Response (JSON):
+```
 {
 "user": "string",
 "following": "string"
 }
+```
